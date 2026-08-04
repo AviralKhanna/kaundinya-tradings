@@ -1,0 +1,51 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+node_modules/
+.next/
+.nuxt/
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.dart_tool/
+.gradle/
+build/
+dist/
+Pods/
+.wrangler/state/
+.vercel/
+*.db
+*.sqlite
+*.sqlite3
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+google-services.json
+GoogleService-Info.plist
+*Aadhar*
+*Adhar*
+*Passport*
+*Pan Card*
+*Bank Statement*
+*Cancelled Check*
+*TransactionHistory*
+*Marksheet*
+*certification*
+*Offer Letter*
+*Offer_Document*
+*Sign.jpeg
+*.class
+*.apk
+*.aab
+*.dill
+*.sst
+*.log
+*.tmp
+*.swp

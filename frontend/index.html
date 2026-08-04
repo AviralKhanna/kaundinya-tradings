@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaundinya Tradings — Invest, Insure & Grow</title>
+  <meta name="description" content="Kaundinya Tradings — SIP, mutual funds, equity, insurance, loans and credit cards. 20 years of experience, 1000+ trusted clients across India." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============ SVG ICON SPRITE ============ -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-chart" viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+      <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></symbol>
+      <symbol id="i-bank" viewBox="0 0 24 24"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></symbol>
+      <symbol id="i-fund" viewBox="0 0 24 24"><line x1="6" y1="20" x2="6" y2="15"/><line x1="12" y1="20" x2="12" y2="9"/><line x1="18" y1="20" x2="18" y2="4"/></symbol>
+      <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+      <symbol id="i-bike" viewBox="0 0 24 24"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/><circle cx="15" cy="5" r="1"/></symbol>
+      <symbol id="i-car" viewBox="0 0 24 24"><path d="M5 17H3v-5l2-5h11l3 5h1a2 2 0 0 1 2 2v3h-2"/><circle cx="7.5" cy="17.5" r="2"/><circle cx="16.5" cy="17.5" r="2"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></symbol>
+      <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 9.5 12 3l9 6.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></symbol>
+      <symbol id="i-plane" viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l4-4a2 2 0 0 0-3-3l-4 4-8.2-1.8a1 1 0 0 0-.9 1.7l5.1 3.5-2 2-2.5-.5-1 1 3 1.5L11 22l1-1-.5-2.5 2-2 3.5 5.1a1 1 0 0 0 1.7-.9z"/></symbol>
+      <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></symbol>
+      <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+      <symbol id="i-trend" viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <div class="topbar-contact">
+          <span><svg class="ico"><use href="#i-pin"/></svg> Nehru Shopping Complex, Lawrence Road, Amritsar</span>
+          <span><svg class="ico"><use href="#i-mail"/></svg> info@kaundinyatradings.com</span>
+        </div>
+        <div class="topbar-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Twitter">t</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="container navbar-inner">
+        <a href="#top" class="brand">
+          <span class="brand-mark">KT</span>
+          <span class="brand-text">Kaundinya<strong>Tradings</strong></span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#top">Home</a></li>
+          <li class="has-dropdown">
+            <a href="#products">Products <svg class="ico caret"><use href="#i-arrow"/></svg></a>
+            <ul class="dropdown mega">
+              <li><a href="#sip"><span class="mi"><svg class="ico"><use href="#i-fund"/></svg></span><span><strong>SIP Calculator</strong><em>Plan your monthly investments</em></span></a></li>
+              <li><a href="#services"><span class="mi"><svg class="ico"><use href="#i-chart"/></svg></span><span><strong>Mutual Funds</strong><em>Lumpsum &amp; SIP plans</em></span></a></li>
+              <li><a href="#services"><span class="mi"><svg class="ico"><use href="#i-trend"/></svg></span><span><strong>Stocks &amp; Equity</strong><em>Trading &amp; wealth baskets</em></span></a></li>
+              <li><a href="#insurance"><span class="mi"><svg class="ico"><use href="#i-shield"/></svg></span><span><strong>Insurance</strong><em>Bike, car, health &amp; more</em></span></a></li>
+              <li><a href="#services"><span class="mi"><svg class="ico"><use href="#i-bank"/></svg></span><span><strong>Loans</strong><em>Against property &amp; securities</em></span></a></li>
+              <li><a href="#services"><span class="mi"><svg class="ico"><use href="#i-card"/></svg></span><span><strong>Credit Cards</strong><em>Rewards matched to you</em></span></a></li>
+            </ul>
+          </li>
+          <li><a href="#sip">SIP Calculator</a></li>
+          <li><a href="#insurance">Insurance</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#sip" class="btn btn-primary nav-cta">Start Investing</a>
+      </div>
+    </nav>
+
+    <!-- Product showcase strip -->
+    <div class="products-strip" id="products">
+      <div class="container products-strip-inner">
+        <a href="#sip"><svg class="ico"><use href="#i-fund"/></svg> SIP Calculator</a>
+        <a href="#services"><svg class="ico"><use href="#i-chart"/></svg> Mutual Funds</a>
+        <a href="#services"><svg class="ico"><use href="#i-trend"/></svg> Stocks &amp; Equity</a>
+        <a href="#insurance"><svg class="ico"><use href="#i-shield"/></svg> Insurance</a>
+        <a href="#services"><svg class="ico"><use href="#i-bank"/></svg> Loans</a>
+        <a href="#services"><svg class="ico"><use href="#i-card"/></svg> Credit Cards</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow light"><span class="pill-dot"></span> Trusted since 2004 · SEBI-era expertise</p>
+        <h1>Invest, insure and grow — <span>all in one place</span></h1>
+        <p class="lead">Start a SIP, trade equity, or get insured in minutes. Expert-guided financial solutions built around your goals by Kaundinya Tradings.</p>
+        <div class="hero-actions">
+          <a href="#sip" class="btn btn-primary btn-lg">Try SIP Calculator</a>
+          <a href="#insurance" class="btn btn-ghost btn-lg">Get Insurance <svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="hero-stats">
+          <div><strong data-count="20">20</strong><span>Years Experience</span></div>
+          <div class="divider"></div>
+          <div><strong data-count="1000">1000</strong><span>Trusted Clients</span></div>
+          <div class="divider"></div>
+          <div><strong data-count="9000">9000</strong><span>Expert Agents</span></div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-badge"><svg class="ico"><use href="#i-shield-check"/></svg> Protection Plans</div>
+        <h3>Comprehensive insurance for total peace of mind</h3>
+        <ul class="hero-list">
+          <li><svg class="ico"><use href="#i-check"/></svg> Life &amp; Health Insurance</li>
+          <li><svg class="ico"><use href="#i-check"/></svg> Bike &amp; Car Cover</li>
+          <li><svg class="ico"><use href="#i-check"/></svg> Loan Against Property &amp; Securities</li>
+          <li><svg class="ico"><use href="#i-check"/></svg> Wealth Baskets &amp; SIPs</li>
+        </ul>
+        <a href="#insurance" class="btn btn-light btn-block">Get a Quote Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SIP CALCULATOR ============ -->
+  <section class="section" id="sip">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow center">Plan Your Wealth</p>
+        <h2>SIP Calculator</h2>
+        <p class="section-sub">See how small, regular investments can grow into a substantial corpus over time.</p>
+      </div>
+
+      <div class="sip-wrap">
+        <div class="sip-controls card">
+          <div class="sip-field">
+            <div class="sip-label">
+              <span>Monthly investment</span>
+              <span class="sip-val">₹ <input type="number" id="sipAmount" value="5000" min="500" max="1000000" /></span>
+            </div>
+            <input type="range" id="sipAmountRange" min="500" max="100000" step="500" value="5000" />
+          </div>
+
+          <div class="sip-field">
+            <div class="sip-label">
+              <span>Expected return rate (p.a)</span>
+              <span class="sip-val"><input type="number" id="sipRate" value="12" min="1" max="30" step="0.5" /> %</span>
+            </div>
+            <input type="range" id="sipRateRange" min="1" max="30" step="0.5" value="12" />
+          </div>
+
+          <div class="sip-field">
+            <div class="sip-label">
+              <span>Time period</span>
+              <span class="sip-val"><input type="number" id="sipYears" value="10" min="1" max="40" /> Yr</span>
+            </div>
+            <input type="range" id="sipYearsRange" min="1" max="40" step="1" value="10" />
+          </div>
+
+          <div class="sip-summary">
+            <div><span>Invested amount</span><strong id="sipInvested">—</strong></div>
+            <div><span>Est. returns</span><strong id="sipReturns" class="pos">—</strong></div>
+            <div class="total"><span>Total value</span><strong id="sipTotal">—</strong></div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary btn-block">Invest Now</a>
+        </div>
+
+        <div class="sip-charts card">
+          <div class="donut-wrap">
+            <svg id="sipDonut" viewBox="0 0 220 220" aria-label="Invested vs returns"></svg>
+            <div class="donut-legend">
+              <span><i class="dot dot-invested"></i>Invested amount</span>
+              <span><i class="dot dot-returns"></i>Est. returns</span>
+            </div>
+          </div>
+          <div class="growth-wrap">
+            <h4>Projected growth over time</h4>
+            <svg id="sipGrowth" viewBox="0 0 520 240" aria-label="Growth over time"></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INSURANCE PRODUCTS (mobile capture) ============ -->
+  <section class="section section-alt" id="insurance">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow center">Insurance</p>
+        <h2>Get Insured in Minutes</h2>
+        <p class="section-sub">Pick a plan and share your number — our advisor calls you back with the best quote.</p>
+      </div>
+
+      <div class="grid grid-3 insurance-grid">
+        <div class="ins-card"><span class="card-icon"><svg class="ico"><use href="#i-bike"/></svg></span><h3>Bike Insurance</h3><p>Two-wheeler cover with instant policy and cashless claims.</p><button class="btn btn-primary ins-btn" data-product="Bike Insurance">Get Quote</button></div>
+        <div class="ins-card"><span class="card-icon"><svg class="ico"><use href="#i-car"/></svg></span><h3>Car Insurance</h3><p>Comprehensive &amp; third-party cover with roadside assistance.</p><button class="btn btn-primary ins-btn" data-product="Car Insurance">Get Quote</button></div>
+        <div class="ins-card"><span class="card-icon"><svg class="ico"><use href="#i-heart"/></svg></span><h3>Health Insurance</h3><p>Cashless hospitalization for you and your family.</p><button class="btn btn-primary ins-btn" data-product="Health Insurance">Get Quote</button></div>
+        <div class="ins-card"><span class="card-icon"><svg class="ico"><use href="#i-shield-check"/></svg></span><h3>Life Insurance</h3><p>Secure your family's future with term &amp; savings plans.</p><button class="btn btn-primary ins-btn" data-product="Life Insurance">Get Quote</button></div>
+        <div class="ins-card"><span class="card-icon"><svg class="ico"><use href="#i-home"/></svg></span><h3>Home Insurance</h3><p>Protect your home and belongings against damage &amp; theft.</p><button class="btn btn-primary ins-btn" data-product="Home Insurance">Get Quote</button></div>
+        <div class="ins-card"><span class="card-icon"><svg class="ico"><use href="#i-plane"/></svg></span><h3>Travel Insurance</h3><p>Coverage for trips, medical emergencies and lost baggage.</p><button class="btn btn-primary ins-btn" data-product="Travel Insurance">Get Quote</button></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="container about-inner">
+      <div class="about-media">
+        <div class="about-panel">
+          <svg class="ico about-panel-ico"><use href="#i-trend"/></svg>
+          <span>Building wealth, together</span>
+        </div>
+        <div class="about-badge">
+          <strong>20+</strong>
+          <span>Years of Experience</span>
+        </div>
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow">About Kaundinya Tradings</p>
+        <h2>Your trusted partner for financial growth</h2>
+        <p>Benefit from expert guidance, personalized services and a proven track record. For two decades we have helped clients trade smarter, protect their families and build lasting wealth.</p>
+        <ul class="feature-list">
+          <li><svg class="ico"><use href="#i-check"/></svg> Equity Trading Expertise</li>
+          <li><svg class="ico"><use href="#i-check"/></svg> Tailored Investment Plans</li>
+          <li><svg class="ico"><use href="#i-check"/></svg> Insurance Solutions</li>
+          <li><svg class="ico"><use href="#i-check"/></svg> Flexible Loan Options</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Get Started Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow center">Our Services</p>
+        <h2>Comprehensive Financial Services</h2>
+        <p class="section-sub">One partner for every stage of your financial life.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="card service-card"><span class="card-icon"><svg class="ico"><use href="#i-trend"/></svg></span><h3>Equity</h3><p>Investment, trading and curated wealth baskets to grow your portfolio.</p><a href="#contact" class="card-link">Learn Details <svg class="ico"><use href="#i-arrow"/></svg></a></article>
+        <article class="card service-card"><span class="card-icon"><svg class="ico"><use href="#i-shield"/></svg></span><h3>Insurance</h3><p>Life, health, general, home and car insurance solutions tailored to you.</p><a href="#insurance" class="card-link">Learn Details <svg class="ico"><use href="#i-arrow"/></svg></a></article>
+        <article class="card service-card"><span class="card-icon"><svg class="ico"><use href="#i-card"/></svg></span><h3>Credit Cards</h3><p>Find the right credit card with rewards matched to your spending.</p><a href="#contact" class="card-link">Learn Details <svg class="ico"><use href="#i-arrow"/></svg></a></article>
+        <article class="card service-card"><span class="card-icon"><svg class="ico"><use href="#i-bank"/></svg></span><h3>Loans</h3><p>Loan against properties and securities with flexible options.</p><a href="#contact" class="card-link">Learn Details <svg class="ico"><use href="#i-arrow"/></svg></a></article>
+        <article class="card service-card"><span class="card-icon"><svg class="ico"><use href="#i-fund"/></svg></span><h3>Mutual Funds</h3><p>Lumpsum and SIP investment plans designed around your goals.</p><a href="#sip" class="card-link">Learn Details <svg class="ico"><use href="#i-arrow"/></svg></a></article>
+        <article class="card service-card"><span class="card-icon"><svg class="ico"><use href="#i-briefcase"/></svg></span><h3>Wealth Baskets</h3><p>Professionally managed baskets to diversify and build wealth.</p><a href="#contact" class="card-link">Learn Details <svg class="ico"><use href="#i-arrow"/></svg></a></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="stats-band">
+    <div class="container grid grid-4">
+      <div class="stat"><strong data-count="20">20</strong><span>Years of Experience</span></div>
+      <div class="stat"><strong data-count="1000">1000</strong><span>Trusted Clients</span></div>
+      <div class="stat"><strong data-count="12">12</strong><span>Countries Served</span></div>
+      <div class="stat"><strong data-count="5000">5000</strong><span>Claims Settled</span></div>
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE US ============ -->
+  <section class="section" id="why">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow center">Why Choose Us</p>
+        <h2>Financial Solutions You Can Rely On</h2>
+      </div>
+      <div class="grid grid-4">
+        <div class="mini-card"><span class="card-icon"><svg class="ico"><use href="#i-zap"/></svg></span><h4>Easy Claims</h4><p>A smooth, transparent claim process with support at every step.</p></div>
+        <div class="mini-card"><span class="card-icon"><svg class="ico"><use href="#i-compass"/></svg></span><h4>Expert Guidance</h4><p>Advice from seasoned professionals who know the markets.</p></div>
+        <div class="mini-card"><span class="card-icon"><svg class="ico"><use href="#i-lock"/></svg></span><h4>Safe Investment</h4><p>Risk-aware strategies built to protect and grow your capital.</p></div>
+        <div class="mini-card"><span class="card-icon"><svg class="ico"><use href="#i-users"/></svg></span><h4>Reliable Support</h4><p>Ongoing monitoring and a team that's always reachable.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK PROCESS ============ -->
+  <section class="section section-alt" id="process">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow center">How We Work</p>
+        <h2>A Simple, Proven Process</h2>
+      </div>
+      <div class="grid grid-3 process">
+        <div class="step"><span class="step-num">01</span><h3>Consultation &amp; Goal Setting</h3><p>We understand your goals, risk appetite and financial priorities.</p></div>
+        <div class="step"><span class="step-num">02</span><h3>Personalized Strategy</h3><p>We build and execute a plan tailored to your unique situation.</p></div>
+        <div class="step"><span class="step-num">03</span><h3>Ongoing Monitoring</h3><p>We track progress and adjust as markets and your life change.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow center">Testimonials</p>
+        <h2>What Our Clients Say</h2>
+      </div>
+      <div class="slider" id="slider">
+        <div class="slides" id="slides">
+          <blockquote class="slide"><div class="stars">★★★★★</div><p>"Kaundinya Tradings transformed how I invest. Their guidance is clear, honest and always in my interest."</p><footer><span class="avatar">RS</span><span><strong>Rahul S.</strong>Amritsar</span></footer></blockquote>
+          <blockquote class="slide"><div class="stars">★★★★★</div><p>"Filing my insurance claim was effortless. The team handled everything and kept me updated throughout."</p><footer><span class="avatar">PM</span><span><strong>Priya M.</strong>Chandigarh</span></footer></blockquote>
+          <blockquote class="slide"><div class="stars">★★★★★</div><p>"Professional, responsive and trustworthy. My SIP portfolio has never been in better shape."</p><footer><span class="avatar">AK</span><span><strong>Aman K.</strong>Ludhiana</span></footer></blockquote>
+          <blockquote class="slide"><div class="stars">★★★★★</div><p>"They found me a loan against property with terms no one else could match. Highly recommended."</p><footer><span class="avatar">NG</span><span><strong>Neha G.</strong>Delhi</span></footer></blockquote>
+        </div>
+        <div class="slider-dots" id="dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta-band">
+    <div class="container cta-inner">
+      <div>
+        <h2>Join our community of 9,000+ expert agents</h2>
+        <p>Partner with Kaundinya Tradings and take the next step in your financial journey.</p>
+      </div>
+      <a href="#contact" class="btn btn-light btn-lg">Talk to an Advisor</a>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-copy">
+        <p class="eyebrow">Contact Us</p>
+        <h2>Let's talk about your goals</h2>
+        <p>Reach out and our team will get back to you within one business day.</p>
+        <ul class="contact-list">
+          <li><span class="ci"><svg class="ico"><use href="#i-phone"/></svg></span><a href="tel:+917986799221">+91 79867 99221</a> / <a href="tel:+918054225555">+91 80542 25555</a></li>
+          <li><span class="ci"><svg class="ico"><use href="#i-mail"/></svg></span><a href="mailto:info@kaundinyatradings.com">info@kaundinyatradings.com</a></li>
+          <li><span class="ci"><svg class="ico"><use href="#i-pin"/></svg></span>SCO 23, Level 2, Nehru Shopping Complex, Lawrence Road, Amritsar, Punjab 143001</li>
+        </ul>
+      </div>
+      <form class="card contact-form" id="contactForm">
+        <div class="form-row">
+          <label>Name<input type="text" required placeholder="Your name" /></label>
+          <label>Phone<input type="tel" required placeholder="Your phone" /></label>
+        </div>
+        <label>Email<input type="email" required placeholder="you@example.com" /></label>
+        <label>Message<textarea rows="4" placeholder="How can we help?"></textarea></label>
+        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        <p class="form-note" id="contactNote" hidden>Thanks! This is a demo form — no message was actually sent.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#top" class="brand brand-footer">
+          <span class="brand-mark">KT</span>
+          <span class="brand-text">Kaundinya<strong>Tradings</strong></span>
+        </a>
+        <p>Your trusted partner for financial growth — SIP, equity, insurance, loans and investments under one roof.</p>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul><li><a href="#sip">SIP Calculator</a></li><li><a href="#services">Mutual Funds</a></li><li><a href="#services">Equity</a></li><li><a href="#insurance">Insurance</a></li><li><a href="#services">Loans</a></li></ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul><li><a href="#about">About Us</a></li><li><a href="#why">Why Choose Us</a></li><li><a href="#process">Our Process</a></li><li><a href="#contact">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul>
+          <li>+91 79867 99221</li>
+          <li>info@kaundinyatradings.com</li>
+          <li>Lawrence Road, Amritsar</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span id="year"></span> Kaundinya Tradings. All rights reserved.</p>
+        <p class="disclaimer">Investments are subject to market risks. Read all scheme-related documents carefully.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ LEAD MODAL (mobile capture) ============ -->
+  <div class="modal" id="leadModal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-box card">
+      <button class="modal-close" data-close aria-label="Close">&times;</button>
+
+      <div class="modal-body" id="modalBody">
+        <span class="modal-icon"><svg class="ico"><use href="#i-shield-check"/></svg></span>
+        <p class="eyebrow" id="modalKicker">Insurance</p>
+        <h3>Enter your mobile number</h3>
+        <p class="modal-sub">Our advisor will call you back with the best quote for <strong id="modalProduct">your plan</strong>.</p>
+        <form id="leadForm">
+          <label>Name (optional)
+            <input type="text" id="leadName" placeholder="Your name" autocomplete="name" />
+          </label>
+          <label>Mobile number
+            <div class="phone-input">
+              <span>+91</span>
+              <input type="tel" id="leadMobile" placeholder="10-digit mobile number" inputmode="numeric" maxlength="10" autocomplete="tel" required />
+            </div>
+          </label>
+          <p class="lead-error" id="leadError" hidden></p>
+          <button class="btn btn-primary btn-block" type="submit" id="leadSubmit">Get a Call Back</button>
+        </form>
+        <p class="modal-fine"><svg class="ico"><use href="#i-lock"/></svg> We respect your privacy. Your number is used only to contact you about this enquiry.</p>
+      </div>
+
+      <div class="modal-success" id="modalSuccess" hidden>
+        <div class="success-check"><svg class="ico"><use href="#i-check"/></svg></div>
+        <h3>Thank you!</h3>
+        <p>Our advisor will call you shortly about <span id="successProduct"></span>.</p>
+        <button class="btn btn-primary" data-close>Done</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
