@@ -1,48 +1,74 @@
 # Kaundinya Tradings
 
-A financial-services marketing site with a **SIP calculator** and **insurance lead capture**, split into two independent parts:
+A responsive financial-services website with a SIP calculator, insurance quote forms, and a separate lead-capture API.
 
+**[Open the live website →](https://kaundinya-tradings.vercel.app)** · [Setup and deployment](docs/SETUP.md) · [Backend documentation](backend/README.md) · [Report an issue](https://github.com/AviralKhanna/kaundinya-tradings/issues)
+
+## Features
+
+- Financial-services landing page with responsive navigation.
+- SIP calculator with adjustable contribution, expected return, and duration.
+- Insurance quote dialogs with mobile-number validation.
+- Lead API with local file storage and a separate Vercel serverless implementation.
+- Optional notification integrations configured through backend environment variables.
+
+The live site is accessible without signing in. Insurance enquiries use the existing production API. **Do not submit test enquiries on the live site:** they can create real leads and trigger notifications. Use your own local backend for development.
+
+## Run locally
+
+Requires Node.js 22.13+ with npm, and Python 3.
+
+```sh
+git clone https://github.com/AviralKhanna/kaundinya-tradings.git
+cd kaundinya-tradings
 ```
-Ins/
-├── frontend/     Static site (HTML / CSS / vanilla JS) — SIP calculator, insurance forms
-└── backend/      Express API — receives enquiries and saves them to a leads file
-```
 
-The two run separately so you can develop each on its own.
+Start the API in one terminal:
 
-## 1. Run the backend (lead API)
-
-```bash
+```sh
 cd backend
-npm install
-npm start          # → http://localhost:4000
+npm ci
+PORT=4011 npm start
 ```
 
-Every insurance enquiry submitted on the frontend is appended to:
-- `backend/data/leads.json`
-- `backend/data/leads.csv`
+Start the website in another terminal, from the repository root:
 
-View captured leads: <http://localhost:4000/api/leads?key=kaundinya-admin>
-
-## 2. Run the frontend (website)
-
-Open `frontend/index.html` directly, or serve it:
-
-```bash
-cd frontend
-python3 -m http.server 8000   # → http://localhost:8000
+```sh
+python3 -m http.server 8010 --bind 127.0.0.1 --directory frontend
 ```
 
-The frontend talks to the backend using `window.API_BASE` in
-[`frontend/config.js`](frontend/config.js) (default `http://localhost:4000`).
+Open **http://localhost:8010**. Check the API at **http://localhost:4011/health**.
 
-## How lead capture works
+`frontend/config.js` selects port 4011 on localhost and the deployed backend URL on the live site. Configure notification credentials only if you intend to send notifications.
 
-1. On the **Insurance** section, the user clicks *Get Quote* for a plan (Bike, Car, Health, …).
-2. A modal asks for their **mobile number first**.
-3. On submit, the frontend `POST`s to `POST {API_BASE}/api/lead`.
-4. The backend validates the number and appends the lead to the leads file — so you have a record of everyone who enquired and can contact them later.
+## Technology
 
-## Live website
+| Area | Stack |
+| --- | --- |
+| Frontend | HTML, CSS, vanilla JavaScript |
+| Local API | Node.js and Express |
+| Local persistence | JSON and CSV files |
+| Hosted persistence | Private Vercel Blob storage |
+| Hosting | Vercel |
 
-https://kaundinya-tradings.vercel.app
+## Project structure
+
+```text
+frontend/             Website, calculator, and enquiry UI
+backend/server.js     Local Express API
+backend/api/          Vercel serverless handlers
+backend/data/         Runtime lead files; not committed
+vercel.json           Frontend deployment configuration
+```
+
+## Deployment
+
+The main Vercel project serves `frontend/`. The backend is deployed separately and needs its own persistence and optional notification settings. [Follow the deployment guide](docs/SETUP.md) to host your own copy; change the production API URL so your copy does not send enquiries to this project's API.
+
+## Current limitations
+
+The general contact form is a UI demo; it does not send a message. Insurance quote forms use the lead API. SIP outputs are projections based on the entered assumptions, not guaranteed returns. Provider configuration and delivery determine whether notifications arrive.
+
+## Author
+
+Built by [Aviral Khanna](https://github.com/AviralKhanna).
