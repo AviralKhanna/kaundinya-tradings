@@ -49,3 +49,12 @@ GoogleService-Info.plist
 *.log
 *.tmp
 *.swp
+
+node_modules/
+.vercel/
+.env*
+!.env.example
+.DS_Store
+.next/
+*.tsbuildinfo
+.vercel

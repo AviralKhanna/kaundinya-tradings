@@ -42,3 +42,7 @@ The frontend talks to the backend using `window.API_BASE` in
 2. A modal asks for their **mobile number first**.
 3. On submit, the frontend `POST`s to `POST {API_BASE}/api/lead`.
 4. The backend validates the number and appends the lead to the leads file — so you have a record of everyone who enquired and can contact them later.
+
+## Live website
+
+https://kaundinya-tradings.vercel.app

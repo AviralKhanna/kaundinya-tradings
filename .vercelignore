@@ -1,0 +1,11 @@
+/.env.local
+/.git/
+/.gitignore
+/.vercel/
+/README-DESKTOP-BACKUP.md
+/README.md
+/backend/
+/.env*
+**/.env*
+**/.DS_Store
+**/node_modules/**

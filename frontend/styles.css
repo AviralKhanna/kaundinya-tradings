@@ -325,3 +325,6 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--b
   .section { padding: 64px 0; }
   .hero { padding: 60px 0 68px; }
 }
+
+/* Keep the hero title readable over its dark background. */
+.hero h1 { color: #fff; }
